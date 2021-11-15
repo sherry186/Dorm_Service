@@ -35,7 +35,7 @@ const App = () => {
           <Route path="/signUp" component={SignUp_Page}/>
           <Route path="/post_detail/:serviceId/:requestId" component={() => <Post_Detail_Page login={login} name={name} setCurrent={setCurrent} current={current} viewSelf={viewSelf} userId={userId}/>}/>
           {/* <Route path="/post_detail/:serviceId" component={Post_Detail_Page}/> */}
-          <Route path="/postSuccess" component={Post_Success_Page}/>
+          <Route path="/postSuccess" component={() => <Post_Success_Page login={login} name={name} setCurrent={setCurrent} current={current} userId = {userId}/>}/>
           <Route path="/rating/:requestId" component={() => <Rating_Page login={login} name={name} setCurrent={setCurrent} current={current} userId = {userId}/>}/>
           <Route path="/history" component={() => <History login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/>}/>
           <Route path="/personal" component={() => <Personal_Page login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/>}/>

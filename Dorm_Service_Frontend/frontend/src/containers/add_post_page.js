@@ -148,13 +148,13 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
       format="YYYY-MM-DD HH:mm"/>
         </Form.Item>
 
-        <Form.Item name="time" label="徵求截止時間">
+        <Form.Item name="time" label="徵求截止時間" required={true}>
             <DatePicker showTime={{ format: 'HH:mm' }}
       format="YYYY-MM-DD HH:mm"/>
         </Form.Item>
 
         {key==='kill_cockroach'||key==='heavylifting'||key==='drive'?
-        <Form.Item label="願付酬勞" name="reward">
+        <Form.Item label="願付酬勞" name="reward" required={true}>
           <Input/>
         </Form.Item>:null}
         
@@ -170,23 +170,23 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
         key==='kill_cockroach'?(
         <>
             <Divider orientation="left" plain>任務資訊</Divider>
-            <Form.Item label="出沒地點" name="location">
+            <Form.Item label="出沒地點" name="location" required={true}>
                 <Location setLocation={setLocation}/>
             </Form.Item>
         </>
         ):key==='heavylifting'?(
         <>
             <Divider orientation="left" plain>任務資訊</Divider>
-            <Form.Item label="預估起點" name="start_location">
+            <Form.Item label="預估起點" name="start_location" required={true}>
                 <Location_With_Floor setLocation={setStartLocation} setFloor={setStartFloor}/>
             </Form.Item>
-            <Form.Item label="預估終點" name="end_location">
+            <Form.Item label="預估終點" name="end_location" required={true}>
                 <Location_With_Floor setLocation={setEndLocation} setFloor={setEndFloor}/>
             </Form.Item>
-            <Form.Item label="物件種類" name="item">
+            <Form.Item label="物件種類" name="item" required={true}>
                 <Input />
             </Form.Item>
-            <Form.Item label="預估重量" name="itemWeight">
+            <Form.Item label="預估重量" name="itemWeight" required={true}>
                 <Input />
             </Form.Item>
             
@@ -194,20 +194,20 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
         ):key==='drive'?(
             <>
             <Divider orientation="left" plain>任務資訊</Divider>
-            <Form.Item label="預估起點" name="start_location">
+            <Form.Item label="預估起點" name="start_location" required={true}>
                 <Location setLocation={setStartLocation}/>
             </Form.Item>
-            <Form.Item label="預估終點" name="end_location">
+            <Form.Item label="預估終點" name="end_location" required={true}>
                 <Location setLocation={setEndLocation}/>
             </Form.Item>    
         </>
         ):key==='host'?(
         <>
             <Divider orientation="left" plain>任務資訊</Divider>
-            <Form.Item label="預估地點" name="location">
+            <Form.Item label="預估地點" name="location" required={true}>
                 <Location setLocation={setLocation}/>
             </Form.Item> 
-            <Form.Item label="地點詳細資訊" name="location_detail">
+            <Form.Item label="地點詳細資訊" name="location_detail" required={true}>
                 <Input />
             </Form.Item> 
         </>
