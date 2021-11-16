@@ -1,3 +1,5 @@
+from sqlalchemy.sql.elements import Null
+from sqlalchemy.sql.expression import null
 from fastapi import APIRouter, status, HTTPException
 import models
 from database import SessionLocal
@@ -137,7 +139,8 @@ async def rate_request(item: Rate):
         
         total = 0
         for i in range(len(rating_array)):
-            total += rating_array[i].rating
+            if rating_array[i].rating:
+                total += rating_array[i].rating
         avg = total / len(rating_array)
         
         
