@@ -15,7 +15,7 @@ module.exports = {
               "@table-bg": "@body-background",
               "@table-header-bg": "#E2E2E2",
               "@btn-default-color": "@primary-color",
-              "@btn-default-bg": transparent,
+              // "@btn-default-bg": transparent,
               "@btn-default-border": "@btn-default-color",
               "@btn-font-weight": 600,
               
