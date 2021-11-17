@@ -30,13 +30,10 @@ const Navigation = ({login,name,setCurrent,current, userId}) => {
     return (
       <>
       <div className = "nav">
+        <div style={{fontFamily: 'Seaweed Script', fontSize: 30, color: '#138796', paddingRight:20, paddingLeft:30, background: '#CCDCD7'}}>Dormy</div>
         <Menu onClick={handleClick} selectedKeys={current} mode="horizontal" className = "left_nav">
         {/* tbd: replace with clicible logo */}
-        <Menu.Item key="title" className = "titleMenuItem"> 
-          {/* icon={<HomeOutlined />} */}
-          <Link to="/" style={{fontFamily: 'Seaweed Script', fontSize: 30, color: '#138796'}}>Dormy</Link>
-        </Menu.Item>
-        <Menu.Item key="post">
+        <Menu.Item key="title">
           <Link to="/">刊登中任務</Link>
         </Menu.Item>
         {login === true
