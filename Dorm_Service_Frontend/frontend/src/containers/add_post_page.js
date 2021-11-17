@@ -92,7 +92,7 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
             if(res.status === 201) {
                 setTimeout(() => {
                     history.push("/");
-                }, 3000)
+                }, 1000)
             }
             return;
         } catch (error) {
