@@ -71,8 +71,9 @@ const Notification = ({userId}) => {
               {item.status === 1 && 
               <div>
                 <div className="notification_item">
-                  <Icon icon="ci:dot-02-s" color="#14d61c" height="50" />
+                  <Icon icon="ci:dot-02-s" color="#138796" height="50" />
                   <p>您應徵的任務<br/><div style={{fontWeight: 'bold'}}>{item.Request.title}</div>已被接受</p>
+                  {/* <p style={{fontWeight: 'bold', fontSize: 16}}>您在「{item.Request.title}」的應徵已成功：）</p> */}
                 </div>
                 <Link to={`/ApplySuccess/${task_label[item.Request.service_id-1]}/${item.Request.request_id}`} style={{paddingLeft: '23vw'}}>詳細資訊</Link>
               </div>
@@ -81,7 +82,7 @@ const Notification = ({userId}) => {
               }
               {item.status === 2 && 
                 <div className="notification_item">
-                  <Icon icon="ci:dot-02-s" color="#D60808" height="50" />
+                  <Icon icon="ci:dot-02-s" color="#F17FB2" height="50" />
                   <p>您應徵的任務<br/><div style={{fontWeight: 'bold'}}>{item.Request.title}</div>已被拒絕</p>
                 </div>
               }

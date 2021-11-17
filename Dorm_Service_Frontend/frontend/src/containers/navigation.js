@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Login_And_SignUp from '../components/login_and_signUp';
 import Login_And_SignUp_With_Login from '../components/login_and_signUp_with_login';
 import Notification from '../components/notification';
+require('typeface-seaweed-script');
 
 const Navigation = ({login,name,setCurrent,current, userId}) => {
     const [click,setClick] = useState(false);
@@ -31,8 +32,9 @@ const Navigation = ({login,name,setCurrent,current, userId}) => {
       <div className = "nav">
         <Menu onClick={handleClick} selectedKeys={current} mode="horizontal" className = "left_nav">
         {/* tbd: replace with clicible logo */}
-        <Menu.Item key="title" icon={<HomeOutlined />}>
-          <Link to="/">Dormy 你的宿舍好幫手</Link>
+        <Menu.Item key="title" className = "titleMenuItem"> 
+          {/* icon={<HomeOutlined />} */}
+          <Link to="/" style={{fontFamily: 'Seaweed Script', fontSize: 30, color: '#138796'}}>Dormy</Link>
         </Menu.Item>
         <Menu.Item key="post">
           <Link to="/">刊登中任務</Link>

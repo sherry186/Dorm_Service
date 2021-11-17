@@ -18,6 +18,7 @@ module.exports = {
               // "@btn-default-bg": transparent,
               "@btn-default-border": "@btn-default-color",
               "@btn-font-weight": 600,
+              // "@disabled-color": "#138796",
               
               // "@table-header-color": "#E2E2E2"rgba(0,0,0,0.5);
             },
