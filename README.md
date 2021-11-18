@@ -54,6 +54,7 @@
 
 ## 三、 啟動前端
 ### Run the server
-進入 Dorm_Service_Frontend/frontend 後：
-1. npm install
-2. npm start
+有兩種方法  
+1. 在 DORM_SERVICE 目錄下 yarn start
+2. cd Dorm_Service_Frontend/frontend
+3. yarn/npm start
