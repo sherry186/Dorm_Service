@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { Icon } from '@iconify/react';
 
 const Post_Table = ({Page, serviceStatus, userId, titleFilter}) => {
     // console.log("post table");
@@ -36,16 +37,25 @@ const Post_Table = ({Page, serviceStatus, userId, titleFilter}) => {
                 let color;
                 if (tag === '打蟑螂') {
                     color = 'volcano';
+                    return (
+                        <Tag color={color} key={tag} style={{ paddingBottom: '2px',paddingTop: '2px' }}><Icon icon="simple-icons:cockroachlabs" height="15" style={{ marginBottom: '-3px' }}/> {tag}</Tag>
+                    );
                 } if (tag === '物品搬運') {
                     color = 'green';
+                    return (
+                        <Tag color={color} key={tag} style={{ paddingBottom: '2px',paddingTop: '2px' }}><Icon icon="fluent:box-24-regular" height="15" style={{ marginBottom: '-3px' }}/> {tag}</Tag>
+                    );
                 } if (tag === '載人服務') {
                     color = 'geekblue';
+                    return (
+                        <Tag color={color} key={tag} style={{ paddingBottom: '2px',paddingTop: '2px' }}><Icon icon="fluent:vehicle-bicycle-20-regular" height="15" style={{ marginBottom: '-3px' }}/> {tag}</Tag>
+                    );
                 } if (tag === '辦活動') {
                     color = 'gold';
+                    return (
+                        <Tag color={color} key={tag} style={{ paddingBottom: '2px',paddingTop: '2px' }}><Icon icon="bi:people" height="15" style={{ marginBottom: '-3px' }}/> {tag}</Tag>
+                    );
                 }
-                return (
-                    <Tag color={color} key={tag}>{tag}</Tag>
-                );
             })}
         </>
         ),

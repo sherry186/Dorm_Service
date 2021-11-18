@@ -15,7 +15,10 @@ const Main_Page = ({login,name,setCurrent,current, setViewSelf, userId}) => {
           <header> 
               <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/></div>
           </header> 
-          <h1 className="page_title">刊登中任務</h1>
+          <div class="title_line">
+            <div className="line"></div>
+            <h1 className="page_title">刊登中任務</h1>
+          </div>
           <div className="filter_and_search">
               <div className="filter"><Service_Filter  setserviceStatus = {setserviceStatus}/></div>
               <div className="search"><Title_Search  settitleFilter = {settitleFilter}/></div>

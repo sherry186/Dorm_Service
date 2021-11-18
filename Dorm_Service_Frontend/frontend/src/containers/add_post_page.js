@@ -90,6 +90,7 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
             }
             
             if(res.status === 201) {
+                message.success("您已成功刊登任務！")
                 setTimeout(() => {
                     history.push("/");
                 }, 1000)
@@ -139,7 +140,11 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
           </Select>
         </Form.Item>
 
-        <Form.Item label="任務標題" name="title" required={true}>
+        <Form.Item label="任務標題" name="title" rules={[
+            {
+                required: true,
+                message: 'Please input item title!',
+            }]}>
           <Input placeholder="請輸入標題"/>
         </Form.Item>
 
@@ -148,20 +153,28 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
       format="YYYY-MM-DD HH:mm"/>
         </Form.Item>
 
-        <Form.Item name="time" label="徵求截止時間" required={true}>
+        <Form.Item name="time" label="徵求截止時間" rules={[
+            {
+                required: true,
+                message: 'Please select time!',
+            }]}>
             <DatePicker showTime={{ format: 'HH:mm' }}
       format="YYYY-MM-DD HH:mm"/>
         </Form.Item>
 
         {key==='kill_cockroach'||key==='heavylifting'||key==='drive'?
-        <Form.Item label="願付酬勞" name="reward" required={true}>
+        <Form.Item label="願付酬勞" name="reward" rules={[
+            {
+                required: true,
+                message: 'Please input rewards!',
+            }]}>
           <Input/>
         </Form.Item>:null}
         
         <Form.Item
             name="detail"
             label="詳細資訊"
-            rules={[{ required: true, message: 'Please input Intro' }]}
+            rules={[{ required: true, message: 'Please input Intro!' }]}
         >
         <Input.TextArea showCount maxLength={100} placeholder="可填寫地點、服務相關補充資訊"/>
       </Form.Item>
@@ -183,10 +196,10 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
             <Form.Item label="預估終點" name="end_location" required={true}>
                 <Location_With_Floor setLocation={setEndLocation} setFloor={setEndFloor}/>
             </Form.Item>
-            <Form.Item label="物件種類" name="item" required={true}>
+            <Form.Item label="物件種類" name="item" rules={[{ required: true, message: 'Please input item type!' }]}>
                 <Input />
             </Form.Item>
-            <Form.Item label="預估重量" name="itemWeight" required={true}>
+            <Form.Item label="預估重量" name="itemWeight" rules={[{ required: true, message: 'Please input item weight!' }]}>
                 <Input />
             </Form.Item>
             
@@ -207,7 +220,7 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
             <Form.Item label="預估地點" name="location" required={true}>
                 <Location setLocation={setLocation}/>
             </Form.Item> 
-            <Form.Item label="地點詳細資訊" name="location_detail" required={true}>
+            <Form.Item label="地點詳細資訊" name="location_detail" rules={[{ required: true, message: 'Please input location detail!' }]}>
                 <Input />
             </Form.Item> 
         </>
@@ -215,7 +228,8 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
       }
         <Form.Item>
             <Button className="cancel_button"><Link to="/">取消</Link></Button>
-            <Button type="primary" className="send_button"　htmlType="submit" onClick={success}>送出</Button>
+            <Button type="primary" className="send_button"　htmlType="submit">送出</Button> 
+            {/* onClick={success} */}
         </Form.Item>
       </Form>
     </>
