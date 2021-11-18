@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "start": "cd dorm_service_frontend && cd frontend && yarn start"
+      }
+}
