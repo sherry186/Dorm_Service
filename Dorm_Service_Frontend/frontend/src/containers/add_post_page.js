@@ -92,7 +92,7 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId, setLogin, setUserI
             if(res.status === 201) {
                 message.success("您已成功刊登任務！")
                 setTimeout(() => {
-                    history.push("/");
+                    history.push("/personal");
                 }, 1000)
             }
             return;
