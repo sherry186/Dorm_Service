@@ -7,7 +7,7 @@ import Login_And_SignUp_With_Login from '../components/login_and_signUp_with_log
 import Notification from '../components/notification';
 require('typeface-seaweed-script');
 
-const Navigation = ({login,name,setCurrent,current, userId, setLogin, setUserId, setName}) => {
+const Navigation = ({login,name,setCurrent,current, userId}) => {
     const [click,setClick] = useState(false);
     const handleClick = (e) => {
         console.log('click ', e);
@@ -46,7 +46,7 @@ const Navigation = ({login,name,setCurrent,current, userId, setLogin, setUserId,
       </Menu>
       <Menu mode="horizontal" className = "right_nav">
         <div className="right_nav">
-          {login === false ? <Login_And_SignUp/>  : <Login_And_SignUp_With_Login name={name} click={click} setClick={setClick} setLogin={setLogin} setUserId={setUserId} setName={setName}/>}
+          {login === false ? <Login_And_SignUp/>  : <Login_And_SignUp_With_Login name={name} click={click} setClick={setClick}/>}
         </div> 
       </Menu> 
       </div>

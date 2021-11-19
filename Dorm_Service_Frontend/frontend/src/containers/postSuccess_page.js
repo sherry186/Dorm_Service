@@ -5,13 +5,13 @@ import Navigation from '../containers/navigation';
 import { Link } from 'react-router-dom';
 
 
-const postSuccess_page = ({login,name,setCurrent,current,userId, setLogin, setUserId, setName}) => {
+const postSuccess_page = ({login,name,setCurrent,current,userId}) => {
 
 
     return (
         <>
         <header> 
-              <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId} setLogin={setLogin} setUserId={setUserId} setName={setName}/></div>
+              <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/></div>
         </header>
         <div className="succes_page">
             <Icon icon="akar-icons:check-box" color="green" height="150" />

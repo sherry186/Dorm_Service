@@ -8,7 +8,7 @@ import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 
-const Rating_Page = ({login,name,setCurrent,current, userId, setLogin, setUserId, setName}) => {
+const Rating_Page = ({login,name,setCurrent,current, userId}) => {
 
     const [appliers, setAppliers] = useState([]);
     const [flag, setFlag] = useState(false);
@@ -40,7 +40,7 @@ const Rating_Page = ({login,name,setCurrent,current, userId, setLogin, setUserId
     //default value
     const navBar = (
         <header>
-        <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId} setLogin={setLogin} setUserId={setUserId} setName={setName}/></div>
+        <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/></div>
         </header>
       )
 

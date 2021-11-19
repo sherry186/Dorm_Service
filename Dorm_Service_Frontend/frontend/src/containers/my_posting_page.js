@@ -2,7 +2,7 @@ import Navigation from '../containers/navigation';
 import Post_Table from '../components/post_table';
 import { useState } from 'react'
  
-const My_Posting_Page = ({login,name,setCurrent,current, setViewSelf, userId, setLogin, setUserId, setName}) => {
+const My_Posting_Page = ({login,name,setCurrent,current, setViewSelf, userId}) => {
   setViewSelf(true);
   // console.log("my posting page");
   const [serviceStatus, setserviceStatus] = useState("all");
@@ -10,7 +10,7 @@ const My_Posting_Page = ({login,name,setCurrent,current, setViewSelf, userId, se
     return (
         <div id="root">
           <header> 
-              <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId} setLogin={setLogin} setUserId={setUserId} setName={setName}/></div>
+              <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/></div>
           </header> 
           <div class="title_line">
             <div className="line"></div>
