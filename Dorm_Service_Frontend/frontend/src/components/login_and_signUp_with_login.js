@@ -1,6 +1,7 @@
 import { Button,List, Dropdown, Menu } from 'antd';
 import { Icon } from '@iconify/react';
 import { Link, useHistory } from "react-router-dom";
+import { DownOutlined } from '@ant-design/icons';
 // import Menu from 'rc-menu/lib/Menu';
 
 const Login_And_SignUp_With_Login = ({name,click, setClick, setLogin, setUserId, setName, setCurrent}) => {
@@ -36,7 +37,7 @@ const Login_And_SignUp_With_Login = ({name,click, setClick, setLogin, setUserId,
         {/* <Button onClick = {handleLogout}  >Logout</Button> */}
         <Dropdown overlay={menu} trigger={['click']} placement = "bottomCenter">
             <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-                {name}
+                {name} <DownOutlined />
             </a>
         </Dropdown>
     </>
