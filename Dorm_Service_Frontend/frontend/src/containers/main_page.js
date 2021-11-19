@@ -4,7 +4,7 @@ import Title_Search from '../components/title_search';
 import Post_Table from '../components/post_table';
 import { useState } from 'react'
  
-const Main_Page = ({login,name,setCurrent,current, setViewSelf, userId}) => {
+const Main_Page = ({login,name,setCurrent,current, setViewSelf, userId, setLogin, setUserId, setName}) => {
   setViewSelf(false);
   const [serviceStatus, setserviceStatus] = useState("all");
   const [titleFilter, settitleFilter] = useState("");
@@ -13,7 +13,7 @@ const Main_Page = ({login,name,setCurrent,current, setViewSelf, userId}) => {
     return (
         <div id="root">
           <header> 
-              <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/></div>
+              <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId} setLogin={setLogin} setUserId={setUserId} setName={setName}/></div>
           </header> 
           <div class="title_line">
             <div className="line"></div>

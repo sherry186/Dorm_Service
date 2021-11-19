@@ -9,7 +9,7 @@ import axios from 'axios';
 
 const { RangePicker } = DatePicker;
 
-const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
+const Add_Post_Page = ({login,name,setCurrent,current,userId, setLogin, setUserId, setName}) => {
     let history = useHistory();
     const [form] = Form.useForm();
     const [key, setKey] = useState();
@@ -114,7 +114,7 @@ const Add_Post_Page = ({login,name,setCurrent,current,userId}) => {
   return (
     <>
       <header> 
-          <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/></div>
+          <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId} setLogin={setLogin} setUserId={setUserId} setName={setName}/></div>
       </header>
       <Divider orientation="left" plain>基本資訊</Divider>
       <Form

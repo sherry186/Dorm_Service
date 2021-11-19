@@ -7,7 +7,7 @@ import { useState,useEffect } from 'react';
 import axios from 'axios';
 import { Divider } from 'antd';
 
-const ApplySuccess = ({login,name,setCurrent,current,userId}) => {
+const ApplySuccess = ({login,name,setCurrent,current,userId, setLogin, setUserId, setName}) => {
 
     const [requestDetail, setRequestDetail] = useState([]);
     const [start, setStart] = useState(true);
@@ -140,7 +140,7 @@ const ApplySuccess = ({login,name,setCurrent,current,userId}) => {
     const { Panel } = Collapse;
     const navBar = (
         <header>
-        <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/></div>
+        <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId} setLogin={setLogin} setUserId={setUserId} setName={setName}/></div>
         </header>
       )
 
