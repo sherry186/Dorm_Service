@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import { Link, useHistory } from "react-router-dom";
 // import Menu from 'rc-menu/lib/Menu';
 
-const Login_And_SignUp_With_Login = ({name,click, setClick, setLogin, setUserId, setName}) => {
+const Login_And_SignUp_With_Login = ({name,click, setClick, setLogin, setUserId, setName, setCurrent}) => {
 
     let history = useHistory();
     const handleNotif = () => {
@@ -14,6 +14,7 @@ const Login_And_SignUp_With_Login = ({name,click, setClick, setLogin, setUserId,
         setLogin(false);
         setUserId('');
         setName('');
+        setCurrent('title');
         history.push("/");
     }
     const menu = (
