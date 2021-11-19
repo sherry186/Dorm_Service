@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 import axios from 'axios';
 import { useState, useEffect } from 'react'
 
-const Personal_Page = ({login,name,setCurrent,current, userId}) => {
+const Personal_Page = ({login,name,setCurrent,current, userId, setLogin, setUserId, setName}) => {
 
     const medal_component = [<Icon icon="whh:medal" color="#c9c9c9" height="50" />,<Icon icon="fa-solid:medal" color="#c9c9c9" height="50" />,<Icon icon="whh:medalbronze" color="#d3976e" height="50" />,<Icon icon="whh:medalsilver" color="#b2c1c0" height="50" />,<Icon icon="whh:medalgold" color="#e9a012" height="50" />];
     const medal_name = ['實習生','新星','達人','專家','大師']
@@ -54,7 +54,7 @@ const Personal_Page = ({login,name,setCurrent,current, userId}) => {
     return(
         <>
             <header> 
-                <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/></div>
+                <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId} setLogin={setLogin} setUserId={setUserId} setName={setName}/></div>
             </header>
             {gender==='O'?<div className="personal_Name">{name}</div>:gender==='F'?<Icon icon="noto-v1:girl-light-skin-tone" color="#14d61c" height="100"  className="personal_avator"/>:gender==='M'?<Icon icon="noto-v1:boy-light-skin-tone" color="#14d61c" height="50" className="personal_avator"/>:null}
             <Divider orientation="left" plain>勳章牆</Divider>

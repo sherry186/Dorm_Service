@@ -9,7 +9,7 @@ import axios from 'axios';
 
 
 // 加一個參數 myPage
-const Post_Detail_Page = ({login,name,setCurrent,current,viewSelf, userId}) => {
+const Post_Detail_Page = ({login,name,setCurrent,current,viewSelf, userId, setLogin, setUserId, setName}) => {
   const [requestDetail, setRequestDetail] = useState([]);
   const [start, setStart] = useState(true);
   const [location, setLocation] = useState([]);
@@ -176,7 +176,7 @@ const [accept, setAccept] = useState({});
 
   const navBar = (
     <header>
-    <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId}/></div>
+    <div><Navigation login={login} name={name} setCurrent={setCurrent} current={current} userId={userId} setLogin={setLogin} setUserId={setUserId} setName={setName}/></div>
     </header>
   )
   const item = (title, description) => {
