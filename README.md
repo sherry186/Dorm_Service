@@ -34,7 +34,7 @@
 ![](https://i.imgur.com/uhqnTZL.png)
 2. 點擊 dorm_service/Schemas/public 右鍵，並點選 "Restore"，如果跳錯請看[下方](###如果點擊"restore"時跳錯要怎麼解)
 ![](https://i.imgur.com/yk8XHG7.png)
-3. 選擇檔案路徑->點擊 dormDB 這個 custom 檔案後按下 "Select" 按鈕
+3. 選擇檔案路徑-> 在 Dorm_Service/Dorm_Service_Backend 點擊 dormDB 這個 custom 檔案後按下 "Select" 按鈕
 ![](https://i.imgur.com/9xrq6nA.png)
 ![](https://i.imgur.com/iESySj0.png)
 4. 最後按下 "Restore" 這個按鈕就可以成功建立所有 table
