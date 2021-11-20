@@ -40,13 +40,6 @@
 4. 最後按下 "Restore" 這個按鈕就可以成功建立所有 table
 ![](https://i.imgur.com/A630tzO.png)
 
-### db backup
-1. 點擊 dorm_service/Schemas/public 右鍵，並點選 "Backup"
-![](https://i.imgur.com/A4uMUT9.png)
-2. `Filename` 要填寫完整存檔路徑，`Format` 要選擇 Custom，其他都不用填寫，直接按 "Backup" 按鈕即可
-![](https://i.imgur.com/32o9zD9.png)
-
-
 ### 如果點擊"restore"時跳錯要怎麼解
 1. 請參考這個[網站](https://dba.stackexchange.com/questions/149169/binary-path-in-the-pgadmin-preferences )
 2. 因為 postgersql 有更改過頁面，所以可以參考下方設定，另外，要記得將版本號更改為 14 
@@ -58,3 +51,14 @@
 1. 在 DORM_SERVICE 目錄下 yarn start
 2. cd Dorm_Service_Frontend/frontend
 3. yarn/npm start
+
+## 四、分工
+在專案製作的分工上，我們分成了兩階段。第一階段的分工為前端、後端的開發以及前後端的溝通及 APIs 串接。第二階段的分工為書面報告撰寫和影片製作，細部分工內容將於書面報告的組員心得中講述。
+
+### 第一階段
+前端：巫芊瑩、陳沛妤
+後端：翁子婷、葉小漓
+前後端溝通與串接：郭子麟、陳冠伊
+### 第二階段
+書面報告撰寫：陳沛妤、翁子婷、郭子麟、陳冠伊
+影片製作：巫芊瑩、葉小漓
