@@ -20,7 +20,7 @@ Dormy 你的宿舍好幫手是一個媒合住宿需求與願意提供協助方�
 1. 首先先建立一個 db 叫做 dorm_service  
 ![](https://i.imgur.com/uhqnTZL.png)
 2. 點擊 dorm_service/Schemas/public 右鍵，並點選 "Restore"，如果跳錯請看[下方](###如果點擊"restore"時跳錯要怎麼解)
-![](https://i.imgur.com/yk8XHG7.png | height=60%)
+![](https://i.imgur.com/yk8XHG7.png)
 3. 選擇檔案路徑-> 在 Dorm_Service/Dorm_Service_Backend 點擊 dormDB 這個 custom 檔案後按下 "Select" 按鈕
 ![](https://i.imgur.com/9xrq6nA.png)
 ![](https://i.imgur.com/iESySj0.png)
