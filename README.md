@@ -20,19 +20,19 @@ Dormy 你的宿舍好幫手是一個媒合住宿需求與願意提供協助方�
 1. 首先先建立一個 db 叫做 dorm_service  
 <img src="https://i.imgur.com/uhqnTZL.png" data-canonical-src="https://i.imgur.com/uhqnTZL.png" height="180" />
 2. 點擊 dorm_service/Schemas/public 右鍵，並點選 "Restore"，如果跳錯請看[下方](###如果點擊"restore"時跳錯要怎麼解)
-<img src="https://i.imgur.com/yk8XHG7.png" data-canonical-src="https://i.imgur.com/yk8XHG7.png" height="300" />
+<img src="https://i.imgur.com/yk8XHG7.png" data-canonical-src="https://i.imgur.com/yk8XHG7.png" height="400" />
 3. 選擇檔案路徑-> 在 Dorm_Service/Dorm_Service_Backend 點擊 dormDB 這個 custom 檔案後按下 "Select" 按鈕
-<img src="https://i.imgur.com/9xrq6nA.png" data-canonical-src="https://i.imgur.com/9xrq6nA.png" height="250" />
-<img src="https://i.imgur.com/iESySj0.png" data-canonical-src="https://i.imgur.com/iESySj0.png" height="300" />
+<img src="https://i.imgur.com/9xrq6nA.png" data-canonical-src="https://i.imgur.com/9xrq6nA.png" height="300" />
+<img src="https://i.imgur.com/iESySj0.png" data-canonical-src="https://i.imgur.com/iESySj0.png" height="400" />
 4. 最後按下 "Restore" 這個按鈕就可以成功建立所有 table
-<img src="https://i.imgur.com/A630tzO.png" data-canonical-src="https://i.imgur.com/A630tzO.png" height="250" />
+<img src="https://i.imgur.com/A630tzO.png" data-canonical-src="https://i.imgur.com/A630tzO.png" height="300" />
 
 
 
 #### 如果點擊"restore"時跳錯要怎麼解
 1. 請參考這個[網站](https://dba.stackexchange.com/questions/149169/binary-path-in-the-pgadmin-preferences )
 2. 因為 postgersql 有更改過頁面，所以可以參考下方設定，另外，要記得將版本號更改為 14 
-<img src="https://i.imgur.com/Wrcy1Bh.png" data-canonical-src="https://i.imgur.com/Wrcy1Bh.png" height="250" />
+<img src="https://i.imgur.com/Wrcy1Bh.png" data-canonical-src="https://i.imgur.com/Wrcy1Bh.png" height="400" />
 
 ### 二、 啟動後端
 #### Setup
