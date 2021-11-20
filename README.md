@@ -30,7 +30,7 @@
 
 ## 二、 載入資料庫
 ### db setup(restore)
-1. 首先先建立一個 db 叫做 dorm_service
+1. 首先先建立一個 db 叫做 dorm_service  
 ![](https://i.imgur.com/uhqnTZL.png)
 2. 點擊 dorm_service/Schemas/public 右鍵，並點選 "Restore"，如果跳錯請看[下方](###如果點擊"restore"時跳錯要怎麼解)
 ![](https://i.imgur.com/yk8XHG7.png)
