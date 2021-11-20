@@ -2,8 +2,8 @@ from sqlalchemy.orm import declarative_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-
-engine = create_engine("postgresql://postgres:adgj123456@localhost/dorm_service", echo = True)
+# here, please change password into your postgresql password
+engine = create_engine("postgresql://postgres:password@localhost/dorm_service", echo = True)
 
 
 # 葉的
