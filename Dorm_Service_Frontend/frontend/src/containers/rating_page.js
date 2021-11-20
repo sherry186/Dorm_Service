@@ -54,13 +54,13 @@ const Rating_Page = ({login,name,setCurrent,current, userId, setLogin, setUserId
 
     async function handleSubmit() {
       for(let i = 0; i < appliers.length; i++) {
+        let params = {
+          requestId: requestId,
+          applierId: appliers[i].id,
+          score: appliers[i].rating
+        }
+        console.log(params);
         try {
-          let params = {
-            requestId: requestId,
-            applierId: appliers[i].id,
-            score: appliers[i].rating
-          }
-          console.log(params);
           await axios.patch(`http://127.0.0.1:8000/users/rateRequest`, params);
         } catch(e) {
           console.log(e);
