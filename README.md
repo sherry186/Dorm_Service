@@ -5,12 +5,12 @@
 1. 首先先建立一個 db 叫做 dorm_service  
 ![](https://i.imgur.com/uhqnTZL.png)
 2. 點擊 dorm_service/Schemas/public 右鍵，並點選 "Restore"，如果跳錯請看[下方](###如果點擊"restore"時跳錯要怎麼解)
-![](https://i.imgur.com/yk8XHG7.png)
+![](https://i.imgur.com/yk8XHG7.png =60%x)
 3. 選擇檔案路徑-> 在 Dorm_Service/Dorm_Service_Backend 點擊 dormDB 這個 custom 檔案後按下 "Select" 按鈕
-![](https://i.imgur.com/9xrq6nA.png)
-![](https://i.imgur.com/iESySj0.png)
+![](https://i.imgur.com/9xrq6nA.png =60%x)
+![](https://i.imgur.com/iESySj0.png =60%x)
 4. 最後按下 "Restore" 這個按鈕就可以成功建立所有 table
-![](https://i.imgur.com/A630tzO.png)
+![](https://i.imgur.com/A630tzO.png =60%x)
 
 ### 如果點擊"restore"時跳錯要怎麼解
 1. 請參考這個[網站](https://dba.stackexchange.com/questions/149169/binary-path-in-the-pgadmin-preferences )
