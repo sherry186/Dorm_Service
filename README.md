@@ -66,3 +66,5 @@ Dormy 你的宿舍好幫手是一個媒合住宿需求與願意提供協助方�
 1. cd Dorm_Service_Frontend/frontend
 2. yarn/npm install
 3. yarn/npm start
+
+如果第三步出現問題的話，可嘗試在檔案夾中新增 <code>.env</code> 檔案，並在內新增 <code> SKIP_PREFLIGHT_CHECK=true
