@@ -16,8 +16,7 @@ router = APIRouter(
 
 @router.get("/asked/{request_id}")
 async def get_all_appliers_user_detail_and_appliers_status_for_this_request(request_id: int):
-    appliers = db.query(models.Applier).filter(models.Applier.request_id == request_id).all()
-    appliers_id = (o.applier_id for o in appliers)
+    db.commit()
     return db.query(models.User, models.Applier).\
         join(models.Applier, models.Applier.applier_id == models.User.user_id).\
         filter( models.Applier.request_id == request_id).all()
